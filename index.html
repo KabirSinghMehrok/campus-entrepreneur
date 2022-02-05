@@ -121,81 +121,64 @@
 
 		.footer {
 			background-color: white;
-			color: blue;
-			position: relative;
-			height: 9rem;
-
+			padding-top: 1rem;
+			padding-bottom: 1rem;
 		}
 
-		.footercontent {
-			position: absolute;
-			display: flex;
-			flex-direction: column;
-			top: 0px;
-			left: 0px;
-			width: 100%;
-			height: 8.5rem;
-
-		}
-
-		.footercontent p {
-			font-size: 0.6rem;
+		.footer * {
 			color: black;
-			margin: auto;
+			font-family: 'Barlow', sans-serif;
 		}
 
-		.artistinfo {
-			display: flex;
-			align-items: center;
-			margin: auto;
-		}
-
-		.artistinfo p {
-			margin: 0;
-		}
-
-		.artistinfo .heading {
-			width: 30%;
-			font-family: 'Barlow Semi Condensed', sans-serif;
-			font-size: 1rem;
-		}
-
-		.artistinfo img {
-			width: 3rem;
-			height: auto;
-			border-radius: 50%;
-			margin-left: 5%;
-			margin-right: 5%;
-		}
-
-		.about p:nth-child(1) {
-			font-size: 0.8rem;
-		}
-
-		.about p:nth-child(2) {
+		.footer *:not(:first-child) {
 			font-size: 0.6rem;
 		}
+
+		.artistinfo table {
+		  margin: auto;
+		}
+
+		.artist {
+		  width: 30%;
+		  text-align: center;
+		}
+
+		.artist img {
+		  border-radius: 50%;
+		  width: 3rem;
+		  height: auto;
+		}
+
+
+		.artistinfo tr:first-child td:nth-child(1) {
+		  text-align: right;
+		  font-weight: bold;
+		}
+
+		.artistinfo tr:first-child td:nth-child(3) {
+		  vertical-align: bottom;
+		}
+
+		.artistinfo tr:last-child td:nth-child(1) {
+		  vertical-align: top;
+		}		
 
 		.connect {
-			display: flex;
-			margin: auto;
+		  vertical-align: middle;
+		  text-align: center;
 		}
 
-		.connect * {
-			margin-right: 0.4rem;
+		.connect a {
+			text-decoration: none;
 		}
 
 		.connect img {
-			height: 1rem;
-			width: auto;
-		}
-
-		.connect p {
+			width: 1rem;
 			margin-right: 0.5rem;
 		}
 
-		.footertext {
-			text-align: center;
+		.moreinfo p {
+		  text-align: center;
 		}
 
 	</style>
@@ -293,37 +276,37 @@
 			</div>
 		</div>
 		<div class="footer">
-<!-- 			<div class="nameplate">
-				<img class="doodle" src="https://drive.google.com/uc?export=view&id=16HQf3nIzWJWVpPFPFnfnGYfQjGPV3EQ3">
-			</div> -->
-			<div class="footercontent">
-				<div class="artistinfo">
-					<p class="heading">Featured Artist</p>
-					<img src="https://drive.google.com/uc?export=view&id=1g-oxpJ9my_Bzjk45nkShJLKuvLKop7Nc">
-					<div class="about">
-						<p>Name Surname</p>
-						<p>@somethingishere</p>
-					</div>
-				</div>
-				<div><p class="footertext">Want to contribute as an artist to our next issue? Find out how</p></div>
-				<div class="connect">
-					<p>Connect with us on:</p>
-					<a href="https://www.instagram.com/ecell_iiitd/">
-					<img src="https://drive.google.com/uc?export=view&id=1snvEbIt3If0yEsTF83MQ9eSF6O-6PnW7">
-					</a>
-					<a href="https://twitter.com/ecell_iiitd">
-					<img src="https://drive.google.com/uc?export=view&id=1J74ZSquwsvWtE0ipcArIMWDFByUhzLhA">
-					</a>
-					<a href="https://www.youtube.com/channel/UCT1NEtd64KZlr9tkJf7x-HQ">
-					<img src="https://drive.google.com/uc?export=view&id=1b06kjKnTVbNKM6h7KlINPldg3E7BZwcG">
-					</a>
-					<a href="https://www.linkedin.com/company/iiitdecell/mycompany/">
-					<img src="https://drive.google.com/uc?export=view&id=1RtvMMVklE-DAtwxQ_0Kor27rTCpLJBUZ">
-					</a>
-				</div>
-				<div><p class="footertext">Designed by KSM for ECell</p></div>
-			</div>
-		</div>
+        <div class="footercontent">
+          <div class="artistinfo">
+            <table>
+              <tr>
+                <td rowspan="2">Featured Artist</td>
+                <td rowspan="2" class="artist"><img class="artistimg" src="https://drive.google.com/uc?export=view&id=1g-oxpJ9my_Bzjk45nkShJLKuvLKop7Nc"></td>
+                <td>Name Surname</td>
+              </tr>
+              <tr><td>@handle</td></tr>
+            </table>
+          </div>
+          <div class="moreinfo">
+            <p>Want to be the next featured artist? Find out <a href="#">how</a></p>
+          </div>
+          <div class="connect">
+            Connect with us on:
+            <a href="https://www.instagram.com/ecell_iiitd/">
+			<img src="https://drive.google.com/uc?export=view&id=1snvEbIt3If0yEsTF83MQ9eSF6O-6PnW7">
+			</a>
+			<a href="https://twitter.com/ecell_iiitd">
+			<img src="https://drive.google.com/uc?export=view&id=1J74ZSquwsvWtE0ipcArIMWDFByUhzLhA">
+			</a>
+			<a href="https://www.youtube.com/channel/UCT1NEtd64KZlr9tkJf7x-HQ">
+			<img src="https://drive.google.com/uc?export=view&id=1b06kjKnTVbNKM6h7KlINPldg3E7BZwcG">
+			</a>
+			<a href="https://www.linkedin.com/company/iiitdecell/mycompany/">
+			<img src="https://drive.google.com/uc?export=view&id=1RtvMMVklE-DAtwxQ_0Kor27rTCpLJBUZ">
+			</a>
+          </div>
+        </div>
+      </div>
 
 		<!-- <table class="footertable">
 			<tbody>
@@ -372,6 +355,8 @@
 				</tr>
 			</tbody>
 		</table> -->
+
+
 	</div>
 </body>
 </html>
