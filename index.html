@@ -11,7 +11,7 @@
 
 	<style type="text/css">
 		body {
-			background-color: grey;
+			background-color: #edecea;
 			margin: 0;
 		}
 
@@ -30,7 +30,7 @@
 			vertical-align: middle;
 		}
 
-		.date {
+/*		.date {
 			position: absolute;
 			top: 1rem;
 			left: 18rem;
@@ -39,7 +39,7 @@
 			font-family: 'Libre Baskerville', serif;
 			letter-spacing: 0.2rem;
 			color: black;
-		}
+		}*/
 
 		.newsletter {
 			margin: auto;
@@ -51,13 +51,13 @@
 			position: relative;
 		}
 
-		.logo {
+/*		.logo {
 			position: absolute;
 			top: 0px;
 			left: 0px;
 			vertical-align: middle;
 		}
-
+*/
 		.divider {
 			position: relative;
 		}
@@ -120,7 +120,11 @@
 		}
 
 		.footer {
+			background-color: white;
+			color: blue;
 			position: relative;
+			height: 9rem;
+
 		}
 
 		.footercontent {
@@ -130,7 +134,8 @@
 			top: 0px;
 			left: 0px;
 			width: 100%;
-			height: 9rem;
+			height: 8.5rem;
+
 		}
 
 		.footercontent p {
@@ -159,7 +164,8 @@
 			width: 3rem;
 			height: auto;
 			border-radius: 50%;
-			margin: 5%;
+			margin-left: 5%;
+			margin-right: 5%;
 		}
 
 		.about p:nth-child(1) {
@@ -187,15 +193,19 @@
 		.connect p {
 			margin-right: 0.5rem;
 		}
+
+		.footertext {
+			text-align: center;
+		}
+
 	</style>
 </head>
 <body>
 
 	<div class="newsletter">
 		<div class="nameplate">
-			<p class="date">07 February 2022</p>
-			<img class="doodle" src="https://drive.google.com/uc?export=view&id=16HQf3nIzWJWVpPFPFnfnGYfQjGPV3EQ3">
-			<img class="logo" src="https://drive.google.com/uc?export=view&id=1Ozfk_zEZCyI5Q9_4tccu97n5mfPjuRAs">
+			<!-- <p class="date">07 February 2022</p> -->
+			<img class="masthead" src="https://drive.google.com/uc?export=view&id=1k1JHYVFNtgZiISZXWk6cttB6ftCVhd9H">
 		</div>
 		<div class="mainbanner">
 			<img class="banner" src="https://drive.google.com/uc?export=view&id=11dnDfjFhLVayr3oHRu8CnJSHlNEHF0tl">
@@ -231,8 +241,7 @@
 			</div>
 		</div>
 		<div class="divider">
-			<img class="doodle" src="https://drive.google.com/uc?export=view&id=1ohZKXV4CgRfh8jMBgGhSrsDqST12liPb">
-			<img class="logo" src="https://drive.google.com/uc?export=view&id=1ZeswJcX3C6VubyoiZwoT-g8RkdmTKiyX">
+			<img class="logo" src="https://drive.google.com/uc?export=view&id=1cXRzSE0nhB30VOqa9xj-ipZj79_HZJix">
 		</div>
 		<div class="news">
 			<div class="content">
@@ -251,8 +260,7 @@
 			</div>
 		</div>
 		<div class="divider">
-			<img class="doodle" src="https://drive.google.com/uc?export=view&id=1ohZKXV4CgRfh8jMBgGhSrsDqST12liPb">
-			<img class="logo" src="https://drive.google.com/uc?export=view&id=1HyGlx-IuBcZn6X0dCBLLQnv_RmVINyYt">
+			<img class="logo" src="https://drive.google.com/uc?export=view&id=17ngebOC39VasVqh9b16QsHdAsu8n-dpX">
 		</div>
 		<div class="spotlight">
 			<div class="item">
@@ -285,9 +293,9 @@
 			</div>
 		</div>
 		<div class="footer">
-			<div class="nameplate">
+<!-- 			<div class="nameplate">
 				<img class="doodle" src="https://drive.google.com/uc?export=view&id=16HQf3nIzWJWVpPFPFnfnGYfQjGPV3EQ3">
-			</div>
+			</div> -->
 			<div class="footercontent">
 				<div class="artistinfo">
 					<p class="heading">Featured Artist</p>
@@ -297,7 +305,7 @@
 						<p>@somethingishere</p>
 					</div>
 				</div>
-				<p>Want to contribute as an artist to our next issue? Find out how</p>
+				<div><p class="footertext">Want to contribute as an artist to our next issue? Find out how</p></div>
 				<div class="connect">
 					<p>Connect with us on:</p>
 					<a href="https://www.instagram.com/ecell_iiitd/">
@@ -313,9 +321,57 @@
 					<img src="https://drive.google.com/uc?export=view&id=1RtvMMVklE-DAtwxQ_0Kor27rTCpLJBUZ">
 					</a>
 				</div>
-				<p>Designed by KSM for ECell</p>
+				<div><p class="footertext">Designed by KSM for ECell</p></div>
 			</div>
 		</div>
+
+		<!-- <table class="footertable">
+			<tbody>
+				<tr>
+					<td><p>Featured Artist</p></td>
+					<td><img class="artistimg" src="https://drive.google.com/uc?export=view&id=1g-oxpJ9my_Bzjk45nkShJLKuvLKop7Nc"></td>
+					<td>
+						<p>Name Surname</p>
+						<p>@somethingishere</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="smnth"><p>Want to contribute as an artist to our next issue? Find out how</p></td>
+				</tr>
+				<tr>
+					<td><p>Connect with us on: </p></td>
+					<td>
+						<a href="https://www.instagram.com/ecell_iiitd/">
+						<img src="https://drive.google.com/uc?export=view&id=1snvEbIt3If0yEsTF83MQ9eSF6O-6PnW7">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.instagram.com/ecell_iiitd/">
+						<img src="https://drive.google.com/uc?export=view&id=1snvEbIt3If0yEsTF83MQ9eSF6O-6PnW7">
+						</a>
+					</td>
+					<td>
+						<a href="https://twitter.com/ecell_iiitd">
+						<img src="https://drive.google.com/uc?export=view&id=1J74ZSquwsvWtE0ipcArIMWDFByUhzLhA">
+						</a>
+					</td>
+						<a href="https://www.youtube.com/channel/UCT1NEtd64KZlr9tkJf7x-HQ">
+						<img src="https://drive.google.com/uc?export=view&id=1b06kjKnTVbNKM6h7KlINPldg3E7BZwcG">
+						</a>
+					<td>
+						<a href="https://www.linkedin.com/company/iiitdecell/mycompany/">
+						<img src="https://drive.google.com/uc?export=view&id=1RtvMMVklE-DAtwxQ_0Kor27rTCpLJBUZ">
+						</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p>Designed by KSM for ECell</p>
+					</td>
+				</tr>
+			</tbody>
+		</table> -->
 	</div>
 </body>
 </html>
