@@ -35,66 +35,26 @@
 		}
 
 		.sectionlink {
-			height: 2.5rem;
-			display: flex;
-		}
-
-		.sectionlink > * {
-			flex: 1;
-		}
-
-		.sectionlink a {
-			display: flex;
-			height: 100%;
-			text-decoration: none;
-			background-color: #3c76c1;
-		}
-
-		.sectionlink p {
-			margin: auto;
-			vertical-align: middle;
-		}
-
-		/*.sectionlink div {
-			flex: 1;
+			width: 100%;
+			height: 2rem;
 			text-align: center;
-			height: auto;
+			font-family: 'Montserrat', sans-serif;
+			background-color: #3c76c1;
 		}
 
 		.sectionlink a {
 			text-decoration: none;
 			color: white;
-			font-family: 'Barlow', 'Montserrat', sans-serif;
-		}*/
+		}
 
 		.sources {
-			height: 2rem;
-			display: flex;
-		}
-
-		.sources > * {
-			flex: 1;
-		}
-
-		.sources a {
-			display: flex;
-			height: 100%;
-			text-decoration: none;
-			background-color: #3c76c1;
-		}
-
-		.sources p {
 			font-size: 0.8rem;
-			margin: auto;
-			vertical-align: middle;
 		}
 
-		.sources > div {
-			font-size: 2rem;
-			display: flex;
-			vertical-align: middle;
-			text-align: center;
+		.sources td:nth-child(1) {
 			background-color: grey;
+			color: white;
+			font-weight: bold;
 		}
 
 		.footer {
@@ -142,11 +102,13 @@
 		<div class="nameplate">
 			<img class="masthead" src="https://drive.google.com/uc?export=view&id=1oBoDR95kGYHKUX0RHlj1G7ANehqjA44X">
 		</div>
-		<div class="sectionlink">
-			<a href="#featured"><p>Featured</p></a>
-			<a href="#news"><p>News</p></a>
-			<a href="#spotlight"><p>Spotlight</p></a>
-		</div>
+		<table class="sectionlink">
+			<tr>
+				<td><a href="#featured">Featured</a></td>
+				<td><a href="#news">News</a></td>
+				<td><a href="#spotlight">Spotlight</a></td>
+			</tr>
+		</table>
 		<div id="featured">
 			<img class="content" src="https://imgur.com/72beIr3.png">
 			<img class="content" src="https://imgur.com/J4VntN3.png">
@@ -159,14 +121,14 @@
 			<img class="content" src="https://imgur.com/f4LqhvH.png">
 		</div>
 
-		<div class="sources">
-			<div><p>Sources</p></div>
-			<a href="#featured"><p>Featured</p></a>
-			<a href="#news"><p>News 1</p></a>
-			<a href="#news"><p>News 2</p></a>
-			<a href="#news"><p>News 3</p></a>
-			<a href="#news"><p>News 4</p></a>
-		</div>
+		<table class="sectionlink sources">
+			<tr>
+				<td>Sources</td>
+				<td><a href="#">Featured</a></td>
+				<td><a href="#">News 1</a></td>
+				<td><a href="#">News 2</a></td>
+			</tr>
+		</table>
 
 
 		<div class="footer">
