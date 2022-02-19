@@ -39,8 +39,11 @@
 			display: flex;
 		}
 
-		.sectionlink a {
+		.sectionlink > * {
 			flex: 1;
+		}
+
+		.sectionlink a {
 			display: flex;
 			height: 100%;
 			text-decoration: none;
@@ -63,6 +66,36 @@
 			color: white;
 			font-family: 'Barlow', 'Montserrat', sans-serif;
 		}*/
+
+		.sources {
+			height: 2rem;
+			display: flex;
+		}
+
+		.sources > * {
+			flex: 1;
+		}
+
+		.sources a {
+			display: flex;
+			height: 100%;
+			text-decoration: none;
+			background-color: #3c76c1;
+		}
+
+		.sources p {
+			font-size: 0.8rem;
+			margin: auto;
+			vertical-align: middle;
+		}
+
+		.sources > div {
+			font-size: 2rem;
+			display: flex;
+			vertical-align: middle;
+			text-align: center;
+			background-color: grey;
+		}
 
 		.footer {
 			background-color: #edecea;
@@ -125,6 +158,16 @@
 		<div id="spotlight">
 			<img class="content" src="https://imgur.com/f4LqhvH.png">
 		</div>
+
+		<div class="sources">
+			<div><p>Sources</p></div>
+			<a href="#featured"><p>Featured</p></a>
+			<a href="#news"><p>News 1</p></a>
+			<a href="#news"><p>News 2</p></a>
+			<a href="#news"><p>News 3</p></a>
+			<a href="#news"><p>News 4</p></a>
+		</div>
+
 
 		<div class="footer">
         <div class="footercontent">
