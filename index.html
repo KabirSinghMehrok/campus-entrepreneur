@@ -15,7 +15,7 @@
 
 		p {
 			color: white;
-			font-family: 'Barlow', sans-serif;
+			font-family: 'Barlow', 'Montserrat', sans-serif;
 		}
 
 		img {
@@ -34,20 +34,35 @@
 			background-color: black;
 		}
 
-		.divider {
-			position: relative;
+		.sectionlink {
+			height: 2.5rem;
+			display: flex;
 		}
 
-		.featured a:link, .news a:link, .spotlight a:link {
-			color: cyan;
+		.sectionlink a {
+			flex: 1;
+			display: flex;
+			height: 100%;
+			text-decoration: none;
+			background-color: #3c76c1;
 		}
 
-		.heading {
-			font-size: 1.4rem;
-			font-family: 'Barlow Semi Condensed', sans-serif;
-			font-weight: bold;
-			margin-bottom: 0.4rem;
+		.sectionlink p {
+			margin: auto;
+			vertical-align: middle;
 		}
+
+		/*.sectionlink div {
+			flex: 1;
+			text-align: center;
+			height: auto;
+		}
+
+		.sectionlink a {
+			text-decoration: none;
+			color: white;
+			font-family: 'Barlow', 'Montserrat', sans-serif;
+		}*/
 
 		.footer {
 			background-color: #edecea;
@@ -86,7 +101,6 @@
 		.moreinfo p {
 		  text-align: center;
 		}
-
 	</style>
 </head>
 <body>
@@ -95,15 +109,20 @@
 		<div class="nameplate">
 			<img class="masthead" src="https://drive.google.com/uc?export=view&id=1oBoDR95kGYHKUX0RHlj1G7ANehqjA44X">
 		</div>
-		<div class="featured">
+		<div class="sectionlink">
+			<a href="#featured"><p>Featured</p></a>
+			<a href="#news"><p>News</p></a>
+			<a href="#spotlight"><p>Spotlight</p></a>
+		</div>
+		<div id="featured">
 			<img class="content" src="https://imgur.com/72beIr3.png">
 			<img class="content" src="https://imgur.com/J4VntN3.png">
 			<img class="content" src="https://imgur.com/1ziXEGm.png">
 		</div>
-		<div class="news">
+		<div id="news">
 			<img class="content" src="https://imgur.com/ANWhok9.png">
 		</div>
-		<div class="spotlight">
+		<div id="spotlight">
 			<img class="content" src="https://imgur.com/f4LqhvH.png">
 		</div>
 
