@@ -11,11 +11,12 @@
 	<style type="text/css">
 		body {
 			margin: 0;
+			background-color: #e8e3ce;
 		}
 
 		p {
 			color: white;
-			font-family: 'Barlow', sans-serif;
+			font-family: 'Barlow', 'Montserrat', sans-serif;
 		}
 
 		img {
@@ -34,19 +35,36 @@
 			background-color: black;
 		}
 
-		.divider {
-			position: relative;
+		.sectionlink {
+			width: 100%;
+			height: 2rem;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			background-color: #FDB380;
 		}
 
-		.featured a:link, .news a:link, .spotlight a:link {
-			color: cyan;
+		.sectionlink td {
+			background-color: #F39758;
 		}
 
-		.heading {
-			font-size: 1.4rem;
-			font-family: 'Barlow Semi Condensed', sans-serif;
+		.sectionlink a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.sources {
+			font-size: 0.8rem;
+			background-color: #3c76c1;
+		}
+
+		.sources td {
+			background-color: #1d5299;
+		}
+
+		.sources td:nth-child(1) {
+			background: none;
+			color: white;
 			font-weight: bold;
-			margin-bottom: 0.4rem;
 		}
 
 		.footer {
@@ -86,26 +104,45 @@
 		.moreinfo p {
 		  text-align: center;
 		}
-
 	</style>
 </head>
 <body>
 
 	<div class="newsletter">
 		<div class="nameplate">
-			<img class="masthead" src="https://drive.google.com/uc?export=view&id=1oBoDR95kGYHKUX0RHlj1G7ANehqjA44X">
+			<img class="masthead" src="https://imgur.com/bXdBh3R.png">
 		</div>
-		<div class="featured">
-			<img class="content" src="https://imgur.com/72beIr3.png">
-			<img class="content" src="https://imgur.com/J4VntN3.png">
-			<img class="content" src="https://imgur.com/1ziXEGm.png">
+		<table class="sectionlink">
+			<tr>
+				<td><a href="#featured">Featured</a></td>
+				<td><a href="#news">News</a></td>
+				<td><a href="#spotlight">Spotlight</a></td>
+			</tr>
+		</table>
+		<div id="featured">
+			<img class="content" src="https://imgur.com/KIt3GOu.png">
+			<img class="content" src="https://imgur.com/2OfIIRS.png">
 		</div>
-		<div class="news">
-			<img class="content" src="https://imgur.com/ANWhok9.png">
+		<div id="news">
+			<img class="content" src="https://imgur.com/iOtdtDF.png">
 		</div>
-		<div class="spotlight">
-			<img class="content" src="https://imgur.com/f4LqhvH.png">
+		<div id="spotlight">
+			<img class="content" src="https://imgur.com/lqTH0XM.png">
 		</div>
+		<div class="events">
+			<img class="content" src="https://imgur.com/CSeHZ8A.png">
+		</div>
+
+		<table class="sectionlink sources">
+			<tr>
+				<td>Sources</td>
+				<td><a href="https://yourstory.com/companies/elight-spm/amp">Featured</a></td>
+				<td><a href="https://yourstory.com/companies/elight-spm/amp">News 1</a></td>
+				<td><a href="https://yourstory.com/2022/02/startup-bharat-this-sustainable-fashion-startup-ai/amp">News 2</a></td>
+				<td><a href="https://www.forbes.com/sites/kenrickcai/2022/02/15/uniphore-series-e-largest-funding-round-for-call-center-ai/?sh=329c38ef68f0">News 3</a></td>
+			</tr>
+		</table>
+
 
 		<div class="footer">
         <div class="footercontent">
